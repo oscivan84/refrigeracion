@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> PolarTech Servicios</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+.hero {
+    position: relative;
+    background-image: url('./img/fondoa.jpg'); /* Cambia por la imagen relacionada con refrigeración */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con 50% de opacidad */
+    z-index: 1;
+}
+
+.hero h1, .hero p {
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),  /* Resplandor difuso */
+                 0 0 20px rgba(255, 255, 255, 0.6); /* Resplandor más intenso */
+}
+.hero h3, .hero p {
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 0 10px rgba(223, 239, 252, 0.8),  /* Resplandor difuso */
+                 0 0 20px rgba(255, 255, 255, 0.6); /* Resplandor más intenso */
+}
+.hero h1 {
+    font-size: 3em; /* Ajusta el tamaño de fuente según sea necesario */
+}
+
+.hero p {
+    font-size: 1.5em; /* Ajusta el tamaño de fuente según sea necesario */
+}
+
+/* Ejemplo de estilo para texto específico que brilla más */
+.highlight {
+    text-shadow: 0 0 15px rgb(187, 230, 250), /* Resplandor dorado más intenso */
+                 0 0 30px rgba(255, 215, 0, 0.7); /* Resplandor más fuerte */
+}
+.highlight2 {
+    text-shadow: 0 0 15px rgb(247, 248, 253), /* Resplandor dorado más intenso */
+                 0 0 30px rgba(221, 196, 51, 0.7); /* Resplandor más fuerte */
+}
+
+
+    .service-icon, .benefit-icon {
+      font-size: 2rem;
+      color: #007bff;
+    }
+    .py-5{
+        background-color: #d7ebfb;
+    }
+    
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-light">
+  <div class="container d-flex justify-content-between align-items-center py-3">
+    <h1 class="h4"><span class="text-primary">PolarTech Servicios</span> - Soluciones en Refrigeración</h1>
+    <nav>
+      <a href="#inicio" class="me-3 text-dark">Inicio</a>
+      <a href="#servicios" class="me-3 text-dark">Servicios</a>
+      <a href="#testimonios" class="me-3 text-dark">Testimonios</a>
+      <a href="#blog" class="me-3 text-dark">Blog</a>
+      <a href="#contacto" class="text-dark">Contacto</a>
+    </nav>
+    <a href="https://wa.me/3202501975" class="btn btn-success">WhatsApp</a>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section id="inicio" class="hero">
+  
+    <h1><span class="highlight">Especialista en Refrigeración a tu Servicio</span></h1>
+    <h3><span class="highlight"><p>Soluciones confiables para tu hogar y negocio, </p><p> disponibles cuando más lo necesitas.</p></span></h3>
+  
+</section>
+
+<!-- Servicios Section -->
+<section id="servicios" class="py-5">
+  <div class="container">
+    <h3 class="text-center mb-5">
+    <h3 class="text-center mb-5 highlight2">
+        Servicios Profesionales de Refrigeración
+    </h3>
+    <div class="row g-4">
+      <div class="col-md-3 text-center">
+        <div class="service-icon">❄️</div>
+        <h5>Instalación de Equipos</h5>
+        <p>Instalación profesional de sistemas de refrigeración.</p>
+        <a href="#contacto" class="btn btn-outline-primary btn-sm">Más información</a>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="service-icon">🔧</div>
+        <h5>Mantenimiento Preventivo</h5>
+        <p>Cuida el rendimiento y vida útil de tus equipos.</p>
+        <a href="#contacto" class="btn btn-outline-primary btn-sm">Más información</a>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="service-icon">⚙️</div>
+        <h5>Reparación de Sistemas</h5>
+        <p>Reparación confiable para sistemas de enfriamiento.</p>
+        <a href="#contacto" class="btn btn-outline-primary btn-sm">Más información</a>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="service-icon">🛠️</div>
+        <h5>Revisión y Diagnóstico</h5>
+        <p>Diagnóstico detallado para soluciones rápidas.</p>
+        <a href="#contacto" class="btn btn-outline-primary btn-sm">Más información</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonios Section -->
+<section id="testimonios" class="bg-light py-5">
+  <div class="container">
+    <h3 class="text-center mb-5">Lo que Dicen Nuestros Clientes</h3>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <p>“Servicio rápido y eficiente. Muy satisfecho con el trabajo.”</p>
+        <h6>Juan Pérez ★★★★★</h6>
+      </div>
+      <div class="col-md-4 text-center">
+        <p>“Recomendado, arreglaron mi refrigerador en el mismo día.”</p>
+        <h6>María García ★★★★☆</h6>
+      </div>
+      <div class="col-md-4 text-center">
+        <p>“Muy profesional y buen trato. Excelente servicio.”</p>
+        <h6>Carlos López ★★★★★</h6>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Beneficios Section -->
+<section id="beneficios" class="py-5">
+  <div class="container">
+    <h3 class="text-center mb-5">¿Por qué Elegir a  PolarTech Servicios?</h3>
+    <div class="row">
+      <div class="col-md-3 text-center">
+        <div class="benefit-icon">💼</div>
+        <h5>Experiencia Comprobada</h5>
+        <p>Más de X años en el sector de refrigeración.</p>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="benefit-icon">⏱️</div>
+        <h5>Atención Rápida</h5>
+        <p>Respuestas inmediatas para emergencias.</p>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="benefit-icon">✅</div>
+        <h5>Calidad Garantizada</h5>
+        <p>Equipos y repuestos de alta calidad.</p>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="benefit-icon">💲</div>
+        <h5>Precios Competitivos</h5>
+        <p>Transparencia y accesibilidad en cada servicio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contacto Section -->
+<section id="contacto" class="bg-light py-5">
+  <div class="container">
+    <h3 class="text-center mb-5">Contáctanos</h3>
+    <form action="#" method="post" class="row g-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Nombre" required>
+      </div>
+      <div class="col-md-6">
+        <input type="tel" class="form-control" placeholder="Teléfono" required>
+      </div>
+      <div class="col-12">
+        <textarea class="form-control" rows="4" placeholder="Escribe tu mensaje"></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-primary">Solicitar Cotización Gratis</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Blog Section -->
+<section id="blog" class="py-5">
+  <div class="container">
+    <h3 class="text-center mb-5">Consejos y Mantenimiento</h3>
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Cuándo Saber si Necesitas Mantenimiento</h5>
+        <p>Conoce las señales de un equipo de refrigeración que necesita atención.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Consejos para Ahorrar Energía</h5>
+        <p>Reduce costos y aumenta la eficiencia de tu refrigerador.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>¿Cómo Elegir un Refrigerador?</h5>
+        <p>Guía para elegir el refrigerador perfecto según tus necesidades.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light text-center py-4">
+  <p>© 2024  PolarTech Servicios - Soluciones en Refrigeración | <a href="#" class="text-white">Política de Privacidad</a></p>
+  <p>Síguenos en: <a href="#" class="text-white">Facebook</a> | <a href="#" class="text-white">Instagram</a> | <a href="https://wa.me/3202501975" class="text-white">WhatsApp</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXlNtW3lLrD/f7gf9J+AWkg6EF6N9Uz0fTskfjlh9N/ZnkDZrV9J65jIFrMS" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhG8s8SeC1BtIGFJGoiStC5B7Q9eKmf9T8l2e1zZj33YN7M8a3fC/tQ72gCb" crossorigin="anonymous"></script>
+</body>
+</html>
